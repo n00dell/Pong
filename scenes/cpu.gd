@@ -17,7 +17,7 @@ func _process(delta: float):
 	ball_pos = $"../Ball".position
 	dist = position.y - ball_pos.y
 	if abs(dist) > get_parent().PADDLE_SPEED * delta: 
-		move_by = get_parent().PADDLE_SPEED * delta * (dist / abs(dist))
+		move_by = get_parent().PADDLE_SPEED *delta * (dist / abs(dist))
 	else:
 		move_by = dist
 	position.y -= move_by

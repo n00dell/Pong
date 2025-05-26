@@ -5,7 +5,7 @@ const START_SPEED : int = 500
 const ACCEL : int = 50
 var speed : int
 var  dir : Vector2
-const MAX_Y_VECTOR : float = 0.6
+const MAX_Y_VECTOR : float = -0.6
 
 #Called when the node enters the scene tree for the first time
 func _ready():
